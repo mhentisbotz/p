@@ -162,17 +162,17 @@ var time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
                    
 //━━━━━━━━━━━━━━━[ CONNECTION 1 ]━━━━━━━━━━━━━━━\\            
 		mess = {
-			wait: '```𝘛𝘶𝘯𝘨𝘨𝘶 𝘉𝘦𝘯𝘵𝘢𝘳𝘳...```',
-		  	  success: '```𝘚𝘶𝘤𝘤𝘦𝘴𝘴 𝘕i𝘩```',
+			wait: '```Loading... YT : MikAzu 929...```',
+		  	  success: '```Succes Hy MikAzu```',
 			   error: {
 				stick: '```𝘚𝘵𝘪𝘤𝘬𝘦𝘳 𝘈𝘦 𝘟𝘰𝘯𝘵𝘰𝘭```',
 				 Iv: '```𝘓𝘪𝘯𝘬 𝘌𝘙𝘙𝘖𝘙 𝘉𝘳𝘶𝘩𝘩_-```',
 	 	          },
 			       only: {
-	    	        group: '```𝘒𝘩𝘶𝘴𝘶𝘴 𝘎𝘳𝘰𝘶𝘱 𝘉𝘳𝘰𝘰```',
-	    	        owner: 'Khusus Owner Slurr',
-	    	        admin: 'Khusus Admin...',
-	    	        bot: 'Bo5 Harus Admin Boss',
+	    	        group: '```Khusus Di Group```',
+	    	        owner: 'Lu Owner? nggak kan Kontol?',
+	    	        admin: '😱,Member Sok Nguasai😒',
+	    	        bot: 'MikAzu Bot Bukan Admin Y Dek',
                   }
 	        	}
 		const isUrl = (url) => {
@@ -459,13 +459,13 @@ switch (command) {
 • Speed : ${process.uptime()}
 • Versi Whatsapp : ${zee.user.phone.wa_version}`
         but = [
-          { buttonId: `!allmenu`, buttonText: { displayText: '</menu>' }, type: 1 },
-          { buttonId: `!owner`, buttonText: { displayText: '</owner>' }, type: 1 }
+          { buttonId: `!allmenu`, buttonText: { displayText: 'MENUNYA MANA😒' }, type: 1 },
+          { buttonId: `!owner`, buttonText: { displayText: 'OWNER GANZ😎' }, type: 1 }
         ]
         sendButLocation(from, monospace(menu), `${p}#Quotes Hari Ini!!${p}\n${p}${hasil}${p}\n${p}${wita} || ${tanggal()}${p}`, tamnel, but, {quoted: mek})
           break
     case 'sewa':
-          tes =`isi Sendiri`
+          tes =`Harga Dan Expired Check Di Owner/Website Gw\nWebsitenya : https://is.gd/4ZPpIt`
           zee.sendMessage(from, tes, text, {quoted: troli})
           break  
           
@@ -626,13 +626,13 @@ switch (command) {
           bc = await zee.downloadMediaMessage(encmedia)
           for (let _ of anu) {
           tes = `${body.slice(4)}`
-          zee.sendMessage(_.jid, bc, { contentText: `${tes}`, footerText: `© cikobot 2K22`, buttons: [{buttonId: `${prefix}menu`,buttonText:{displayText: 'MENU'},type:1},{buttonId: `${prefix}donasi`,buttonText:{displayText:'DONASI'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: tamnel, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
+          zee.sendMessage(_.jid, bc, { contentText: `${tes}`, footerText: `SC : https://is.gd/4ZPpIt`, buttons: [{buttonId: `${prefix}menu`,buttonText:{displayText: 'MENU MIKAZU'},type:1},{buttonId: `${prefix}sewa`,buttonText:{displayText:'SEWA BOT🌹'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: tamnel, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
           }
           reply('Suksess broadcast')
           } else {
           for (let _ of anu) {
        	  textt = `${body.slice(4)}`
-          zee.sendMessage(_.jid, { contentText: `${textt}`, footerText: `${p}${wita} || ${tanggal()}${p}`, buttons: [{buttonId: `${prefix}menu`,buttonText:{displayText: 'MENU'},type:1},{buttonId: `${prefix}donasi`,buttonText:{displayText:'DONASI'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: tamnel, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
+          zee.sendMessage(_.jid, { contentText: `${textt}`, footerText: `${p}${wita} || ${tanggal()}${p}`, buttons: [{buttonId: `${prefix}menu`,buttonText:{displayText: 'MENU MIKAZU'},type:1},{buttonId: `${prefix}sewa`,buttonText:{displayText:'SEWA BOT🌹'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: tamnel, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
           }
           reply('Suksess broadcast')
           }
@@ -701,13 +701,13 @@ switch (command) {
           fs.unlinkSync(owgi);
           break;			
 	case 'attp':
-          if (args.length == 0) return reply(`Example: ${prefix + command} zee`)
+          if (args.length == 0) return reply(`Example: ${prefix + command} MikAzu 929`)
           buffer = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURI(v)}`)
           zee.sendMessage(from, buffer, sticker, { quoted: mek })
           break;		  
     case 'sticker': case 'stiker': case 'sg': case 's':
-          var a = "ZeeBot";
-          var b = "By Pebri";
+          var a = "YT :";
+          var b = " MikAzu 929";
           if (isMedia && !mek.message.videoMessage || isQuotedImage ) {
           const encmedia = isQuotedImage   ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
            media = await zee.downloadAndSaveMediaMessage(encmedia)
@@ -1132,7 +1132,7 @@ switch (command) {
            } else if (Number(args[0]) === 0) {
            simin.splice(from, 1)
            fs.writeFileSync('./lib/data/simi.json', JSON.stringify(simin))
-           reply('Sukes menonaktifkan mode simi')
+           reply('np Di offin sih abg asyraf ganteng:(🌹')
            } else {
            reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
            }
@@ -1470,11 +1470,11 @@ switch (command) {
     case 'icecold':        case 'luxury':
     case 'cloud':          case 'summersand':
     case 'horrorblood':   case 'thunder':
-          if (args.length == 0) return reply(`Example: ${prefix + command} zeebot`)
+          if (args.length == 0) return reply(`Example: ${prefix + command} MikAzu 929`)
           ini_txt = args.join(" ")
           getBuffer(`https://api.lolhuman.xyz/api/textprome/${command}?apikey=${apikey}&text=${ini_txt}`).then((gambar) => {
           but = [
-          { buttonId: `!allmenu`, buttonText: { displayText: 'back to menu' }, type: 1 }]
+          { buttonId: `!menu`, buttonText: { displayText: 'MENU MIKAZU😎' }, type: 1 }]
           sendButImage(from, `${command + v}`, `${fake}`, gambar, but)
           })
           break
@@ -1483,12 +1483,12 @@ switch (command) {
     case 'ninjalogo':     case 'marvelstudio':
     case 'lionlogo':      case 'wolflogo':
     case 'steel3d':       case 'wallgravity':
-          if (args.length == 0) return reply(`Example: ${prefix + command} zeebot`)
+          if (args.length == 0) return reply(`Example: ${prefix + command} MikAzu 929`)
           txt1 = args[0]
           txt2 = args[1]
           getBuffer(`https://api.lolhuman.xyz/api/textprome2/${command}?apikey=${apikey}&text1=${txt1}&text2=${txt2}`).then((gambar) => {
           but = [
-          { buttonId: `!allmenu`, buttonText: { displayText: 'back to menu' }, type: 1 }]
+          { buttonId: `!menh`, buttonText: { displayText: 'MENU MIKAZU😎' }, type: 1 }]
           sendButImage(from, `${command + v}`, `${fake}`, gambar, but)
           })
           break
@@ -1505,23 +1505,23 @@ switch (command) {
     case 'letterleaves': case 'glowingneon':
     case 'fallleaves':   case 'flamming':
     case 'harrypotter': case 'carvedwood':
-          if (args.length == 0) return reply(`Example: ${prefix + command} zeebot`)
+          if (args.length == 0) return reply(`Example: ${prefix + command} MikAzu 929`)
           ini_txt = args.join(" ")
           getBuffer(`https://api.lolhuman.xyz/api/photooxy1/${command}?apikey=${apikey}&text=${ini_txt}`).then((gambar) => {
           but = [
-          { buttonId: `!allmenu`, buttonText: { displayText: 'back to menu' }, type: 1 }]
+          { buttonId: `!menu`, buttonText: { displayText: 'MENU MIKAZU' }, type: 1 }]
           sendButImage(from, `${command + v}`, `${fake}`, gambar, but)
           })
           break
     case 'arcade8bit':
     case 'battlefield4':
     case 'pubg':
-          if (args.length == 0) return reply(`Example: ${prefix + command} zeebot`)
+          if (args.length == 0) return reply(`Example: ${prefix + command} MikAzu 929`)
           txt1 = args[0]
           txt2 = args[1]
           getBuffer(`https://api.lolhuman.xyz/api/photooxy2/${command}?apikey=${apikey}&text1=${txt1}&text2=${txt2}`).then((gambar) => {
           but = [
-          { buttonId: `!allmenu`, buttonText: { displayText: 'back to menu' }, type: 1 }]
+          { buttonId: `!allmenu`, buttonText: { displayText: 'BACK ALL MENU' }, type: 1 }]
           sendButImage(from, `${command + v}`, `${fake}`, gambar, but)
           })
           break
@@ -1541,7 +1541,7 @@ switch (command) {
     case 'galaxybat':    case 'snow3d':
     case 'birthdayday':  case 'goldplaybutton':
     case 'silverplaybutton': case 'freefire':
-          if (args.length == 0) return reply(`Example: ${prefix + command} zeebot`)
+          if (args.length == 0) return reply(`Example: ${prefix + command} MikAzu 929`)
           ini_txt = args.join(" ")
           getBuffer(`https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=${apikey}&text=${ini_txt}`).then((gambar) => {
           zee.sendMessage(from, gambar, image, { quoted: mek })
@@ -1550,7 +1550,9 @@ switch (command) {
 //++Menunya          
     case 'allmenu': case 'm2':
           let q = 0
-          pp = monospace(` ❏「 OWNER 」	          
+          pp = monospace(` ❏「 OWNER 」	
+0${q+=1}.bc <teks>
+0${q+=1}.broadcast <teks>
 0${q+=1}.ping
 0${q+=1}.self
 0${q+=1}.public
@@ -1757,8 +1759,8 @@ ${q+=1}.freefire text
  ❏「 EVAL 」
 ${q+=1}.term`)        
           but = [
-           { buttonId: `!owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ️' }, type: 1 },
-           { buttonId: `!sewa`, buttonText: { displayText: 'sᴇᴡᴀ' }, type: 1 }]
+           { buttonId: `!owner`, buttonText: { displayText: 'OWNER GANZ😎' }, type: 1 },
+           { buttonId: `!sewa`, buttonText: { displayText: 'SEWA BOT🌹' }, type: 1 }]
           sendButton(from, pp, 'Created By Pebri', but, troli)
           break         
           
@@ -1776,7 +1778,7 @@ ${q+=1}.term`)
          zee.sendMessage(from, {displayName: `Creator Bot`, vcard: vcard2}, contact, 
          { quoted: troli, 
          })
-         reply('*_Jangan Lupa Subscrib_*\nhttps://youtube.com/c/FEBZABOTZ')
+         reply('SC : https://is.gd/4ZPpIt')
          break
              
 		                         
@@ -1787,9 +1789,9 @@ ${q+=1}.term`)
           zee.sendMessage(from, pp, text)
           }
           if (isCmd) {      
-          menu = monospace(`Maaf kak ${pushname}_<\nCommand ${command} Tidak tersedia di list menu!!\nMohon cek kembali list menu nya kak`)
-          but = [{ buttonId: `!menu`, buttonText: { displayText: 'MENU' }, type: 1 }]
-          sendButton(from, menu, 'Created By Pebri', but, mek)
+          menu = monospace(`Command Bodkep G Ad Di Liat Menu Bot Gw Tolol`)
+          but = [{ buttonId: `!menu`, buttonText: { displayText: 'MENU MIKAZU🗿' }, type: 1 }]
+          sendButton(from, menu, 'Created By Asyraf', but, mek)
           break
           }
               
