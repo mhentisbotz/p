@@ -96,9 +96,9 @@ const starts = async (zee = new WAConnection()) => {
                 groupName = mdata.subject
                 let v = zee.contacts[num] || { notify: num.replace(/@.+/, '') }
                 anu_user = v.vname || v.notify || num.split('@')[0]
-              teks = `Selamat Datang Kak *@${mem.split('@')[0]}*\n*Welcome in group *${groupName}*\n*Nomor :* ${mem.replace('@s.whatsapp.net', '')}\nSilahkan Baca Rules Groupnya Kak\n\n*Semoga betah~~*`
+              teks = `Hy Beban,\nWelcome Dek\n\nWebsite Owner : https://is.gd/4ZPpIt\nIlove You😎🌹🗿`
               buff = await getBuffer(pic)
-              zee.sendMessage(mdata.id, { contentText: `${teks}`, footerText: `Welcome Message By *Pebri*`, buttons: [{buttonId: `.selamatdatang`,buttonText:{displayText: 'WELCOME KAK'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {"mentionedJid": [num]}}}, 'buttonsMessage')
+              zee.sendMessage(mdata.id, { contentText: `${teks}`, footerText: `https://is.gd/4ZPpIt`, buttons: [{buttonId: `.selamatdatang`,buttonText:{displayText: 'HY KONTOL'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {"mentionedJid": [num]}}}, 'buttonsMessage')
 		}
 		
 		if (!isWelkom) return
@@ -108,9 +108,9 @@ const starts = async (zee = new WAConnection()) => {
                 let w = zee.contacts[num] || { notify: num.replace(/@.+/, '') }
                 anu_user = w.vname || w.notify || num.split('@')[0]
                 memeg = mdata.participants.length
-                out = `Selamat Tinggal Kak @${num.split('@')[0]} Semoga Jasamu Tidak Tenang!`
+                out = `Hy @${num.split('@')[0]}\nGood Bye\nSemoga Jasamu Tidak Tenang🗿!`
                buff = await getBuffer(pic)
-               zee.sendMessage(mdata.id, { contentText: `${out}`, footerText: `Left Message By *Pebri*`, buttons: [{buttonId: `.bay`,buttonText:{displayText: 'BYE KAK👋'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {"mentionedJid": [num]}}}, 'buttonsMessage')
+               zee.sendMessage(mdata.id, { contentText: `${out}`, footerText: `SC : https://is.gd/4ZPpIt`, buttons: [{buttonId: `.bay`,buttonText:{displayText: 'JANGAN DIPENCET🗿!'},type:1}],headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: buff, contextInfo: {"mentionedJid": [num]}}}, 'buttonsMessage')
             }
 			} catch (e) {
 			console.log('Error : %s', color(e, 'red'))
